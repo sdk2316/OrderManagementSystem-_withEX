@@ -88,7 +88,7 @@ public class OrderController {
 	}
 
 	// excel export
-	//
+	// // http://localhost:8000/order/OrderDetails/export/excel
 	@GetMapping(value = "/OrderDetails/export/excel", produces = { "application/excel" })
 	public void exportToExcel(HttpServletResponse response) throws IOException {
 		response.setContentType("application/octet-stream");
